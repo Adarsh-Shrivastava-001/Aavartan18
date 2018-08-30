@@ -44,3 +44,6 @@ Route::get('/schedule', function () {
 Route::get('/contactus', function () {
     return view('contactus');
 });
+Route::get('/team', function () {
+    return view('team');
+});
