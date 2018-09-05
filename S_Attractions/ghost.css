@@ -12,10 +12,10 @@
 .ghosttext {
   position: fixed;
   /* padding-top: 10%; */
-  margin-top: 5%;
+  bottom: 5%;
   font-family: roboto;
 	font-weight: 400;
-	font-size: 35px;
+	font-size: 25px;
 
 	color: #fafafa;
 }
