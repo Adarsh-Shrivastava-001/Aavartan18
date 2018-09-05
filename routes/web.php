@@ -47,3 +47,7 @@ Route::get('/contactus', function () {
 Route::get('/team', function () {
     return view('team');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

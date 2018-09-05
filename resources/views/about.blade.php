@@ -1,3 +1,31 @@
-<h1>about</h1>
-@include('inc.menubutton')
-@include('inc.footer')
+@extends('main')
+@section('head')
+<title>about</title>
+@endsection
+@section('content')
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+<h1>from extends</h1></br>
+
+@endsection
