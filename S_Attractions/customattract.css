@@ -1,0 +1,16 @@
+
+
+@media screen and (max-width: 650px) {
+
+
+
+
+
+.cont {
+  padding: 150px 5px;
+}
+.el__bg {
+  width: calc(100vw - 5px);
+}
+
+}
