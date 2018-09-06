@@ -1,4 +1,4 @@
-function sid() {
+(function () {
 
     // Get all images and texts, get the `canvas` element, and save slider length
     var sliderCanvas = document.querySelector('.pieces-slider__canvas');
@@ -182,12 +182,10 @@ function sid() {
     }
 
     // Select the next item: hide current items, update indexes, and show the new current item
-    siddharth = this;
     function nextItem() {
         hideItems();
         currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
 
-        piecesthis = this;
         updateIndexes();
         showItems();
     }
@@ -195,21 +193,9 @@ function sid() {
         hideItems();
         currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
         currentIndex = globalpiece;
-        piecesthis = this;
         updateIndexes();
         showItems();
     }
-//     setInterval(function(){
-//       hideItems();
-//
-//       currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
-//       console.log(currentIndex)
-// currentIndex = 2;
-//
-//       piecesthis = this;
-//       updateIndexes();
-//       showItems();
-//    }, 150000);
 
     // Handle `resize` event
 
@@ -235,5 +221,4 @@ function sid() {
             sliderCanvas.classList.remove('pieces-slider__canvas--hidden');
         }, 500);
     }
-}
-sid()
+  })();

@@ -47,15 +47,7 @@
 						<img class="pieces-slider__image" src="img/1.jpg" alt="">
 						<h2 class="pieces-slider__text">Status Quo</h2>
 					</div>
-					<ul id="rig">
-    <li>
-        <a class="rig-cell" href="#">
-            <img class="rig-img" src="img/1.jpg">
-            <span class="rig-overlay"></span>
-            <span class="rig-text">hello</span>
-        </a>
-    </li>
-	</ul>
+
 					<div class="pieces-slider__slide">
 						<img class="pieces-slider__image" src="img/2.jpg" alt="">
 						<h2 class="pieces-slider__text">Amphibia</h2>
@@ -258,18 +250,56 @@
 					<!-- Slider buttons: prev and next -->
 					<button class="pieces-slider__button pieces-slider__button--prev">prev</button>
 					<button class="pieces-slider__button pieces-slider__button--next">next</button>
-					<button class=" pieces-slider__button--change">change</button>
+					<button id="changerButton" class=" pieces-slider__button--change">change</button>
 				</div>
 			</div>
 		</main>
+		<ul id="rig">
+<li onClick=getIndex(this)>
+	<a class="rig-cell" >
+			<img class="rig-img"  data-echo="img/1.jpg" src="img/1.jpg">
+			<span class="rig-overlay"></span>
+			<span class="rig-text">hello</span>
+	</a>
+</li>
+<li onClick=getIndex(this)>
+	<a class="rig-cell" >
+			<img class="rig-img" data-echo="img/2.jpg" src="img/2.jpg">
+			<span class="rig-overlay"></span>
+			<span class="rig-text">hello</span>
+	</a>
+</li>
+<li onClick=getIndex(this)>
+	<a class="rig-cell" >
+			<img class="rig-img"  data-echo="img/3.jpg" src="img/3.jpg">
+			<span class="rig-overlay"></span>
+			<span class="rig-text">hello</span>
+	</a>
+</li>
+<li onClick=getIndex(this)>
+	<a class="rig-cell" >
+			<img class="rig-img"   data-echo="img/4.jpg"src="img/4.jpg">
+			<span class="rig-overlay"></span>
+			<span class="rig-text">hello</span>
+	</a>
+</li>
+<li onClick=getIndex(this)>
+	<a class="rig-cell" >
+			<img class="rig-img"  data-echo="img/5.jpg" src="img/5.jpg">
+			<span class="rig-overlay"></span>
+			<span class="rig-text">hello</span>
+	</a>
+</li>
+</ul>
 		<script src='js/anime.min.js'></script>
 		<script src='js/pieces.min.js'></script>
 		<script src='js/demo.js'></script>
-		<img src="35.gif" alt="Photo" data-echo="img/5.jpg">
+		<!-- <img src="35.gif" alt="Photo" data-echo="img/5.jpg"> -->
 
 <script src="js/echo.js"></script>
+<script src="js/change.js"></script>
 <script>
-var globalpiece = 3 ;
+var globalpiece = 4 ;
 echo.init({
 	offset: 100,
 	throttle: 250,
