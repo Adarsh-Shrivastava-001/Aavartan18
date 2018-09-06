@@ -9,6 +9,7 @@
 		<meta name="author" content="Luis Manuel for Codrops" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
 		<link rel="stylesheet" type="text/css" href="css/slider.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 	</head>
@@ -46,7 +47,16 @@
 						<img class="pieces-slider__image" src="img/1.jpg" alt="">
 						<h2 class="pieces-slider__text">Status Quo</h2>
 					</div>
-					<div class="pieces-slider__slide">
+					<ul id="rig">
+    <li>
+        <a class="rig-cell" href="#">
+            <img class="rig-img" src="img/1.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Lorem Ipsum Dolor</span>
+        </a>
+    </li>
+	</ul>
+					<!-- <div class="pieces-slider__slide">
 						<img class="pieces-slider__image" src="img/2.jpg" alt="">
 						<h2 class="pieces-slider__text">Amphibia</h2>
 					</div>
@@ -241,7 +251,7 @@
 					<div class="pieces-slider__slide">
 						<img class="pieces-slider__image" src="img/5.jpg" alt="">
 						<h2 class="pieces-slider__text">Fun Fun Run</h2>
-					</div>
+					</div> -->
 					<!-- Canvas to draw the pieces -->
 					<canvas class="pieces-slider__canvas"></canvas>
 
