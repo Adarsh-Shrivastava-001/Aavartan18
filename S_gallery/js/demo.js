@@ -1,4 +1,4 @@
-(function() {
+function sid() {
 
     // Get all images and texts, get the `canvas` element, and save slider length
     var sliderCanvas = document.querySelector('.pieces-slider__canvas');
@@ -128,6 +128,7 @@
         // Select prev or next slide using buttons
         document.querySelector('.pieces-slider__button--prev').addEventListener('click', prevItem);
         document.querySelector('.pieces-slider__button--next').addEventListener('click', nextItem);
+        document.querySelector('.pieces-slider__button--change').addEventListener('click', pieceChange);
 
         // Select prev or next slide using arrow keys
         document.addEventListener('keydown', function (e) {
@@ -181,28 +182,34 @@
     }
 
     // Select the next item: hide current items, update indexes, and show the new current item
-
+    siddharth = this;
     function nextItem() {
         hideItems();
         currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
-        console.log(currentIndex)
-currentIndex = 3;
 
         piecesthis = this;
         updateIndexes();
         showItems();
     }
-    setInterval(function(){
-      hideItems();
-
-      currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
-      console.log(currentIndex)
-currentIndex = 2;
-
-      piecesthis = this;
-      updateIndexes();
-      showItems();
-   }, 150000);
+    function pieceChange() {
+        hideItems();
+        currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
+        currentIndex = globalpiece;
+        piecesthis = this;
+        updateIndexes();
+        showItems();
+    }
+//     setInterval(function(){
+//       hideItems();
+//
+//       currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
+//       console.log(currentIndex)
+// currentIndex = 2;
+//
+//       piecesthis = this;
+//       updateIndexes();
+//       showItems();
+//    }, 150000);
 
     // Handle `resize` event
 
@@ -228,4 +235,5 @@ currentIndex = 2;
             sliderCanvas.classList.remove('pieces-slider__canvas--hidden');
         }, 500);
     }
-})();
+}
+sid()
