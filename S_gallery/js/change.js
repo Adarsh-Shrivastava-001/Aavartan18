@@ -2,14 +2,15 @@
 onClick = "getIndex(this);"
 
 function getIndex(node) {
+  console.log(node.value)
   var childs = node.childNodes;
   for (i = 0; i < childs.length; i++) {
     if (node == childs[i]) break;
     console.log(`loop ${i}`)
   }
-  console.log(childs.length)
+  console.log(childs)
 
-globalpiece = i+1;
+globalpiece = node.value -1;
 document.getElementById("changerButton").click();
 
 }
