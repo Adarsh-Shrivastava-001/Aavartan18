@@ -86,8 +86,19 @@
 		width: 100vw;
 		height: 100vw;
 	}
+	.js .pieces-slider__canvas {
+
+		height: 75vh;
+	}
 	.pieces-slider__button {
 		width: 60px;
 		height: 60px;
 	}
 }
+
+@media screen and (max-width: 30em) {
+
+	.js .pieces-slider__canvas {
+
+		height: 50vh;
+	}
