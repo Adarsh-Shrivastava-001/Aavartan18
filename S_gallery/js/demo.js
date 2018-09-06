@@ -181,15 +181,31 @@
     }
 
     // Select the next item: hide current items, update indexes, and show the new current item
+
     function nextItem() {
         hideItems();
         currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
+        console.log(currentIndex)
+currentIndex = 3;
+
+        piecesthis = this;
         updateIndexes();
         showItems();
     }
+    setInterval(function(){
+      hideItems();
+
+      currentIndex = currentIndex < slidesLength - 1 ? currentIndex + 1 : 0;
+      console.log(currentIndex)
+currentIndex = 2;
+
+      piecesthis = this;
+      updateIndexes();
+      showItems();
+   }, 150000);
 
     // Handle `resize` event
-    
+
     var initial = true, hideTimer, resizeTimer;
 
     // User starts resizing, so wait 300 ms before reinitialize the slider
