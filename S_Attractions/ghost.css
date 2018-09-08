@@ -10,7 +10,7 @@
 }
 
 .ghosttext {
-  position: fixed;
+  position: absolute;
   /* padding-top: 10%; */
   bottom: 5%;
   font-family: roboto;

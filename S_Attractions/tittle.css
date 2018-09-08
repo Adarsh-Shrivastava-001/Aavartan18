@@ -3,10 +3,10 @@
 	outline: none;
 	text-decoration: none;
 	position: relative;
-	font-size: 8em;
+	font-size: 5em;
 	line-height: 1;
 	color: #9e9ba4;
-	display: inline-block;
+	display: inline;
 }
 
 /* Kukuri */
@@ -63,7 +63,7 @@
 /* Media Queries */
 
 @media screen and (max-width: 42em) {
-	.link--kukuri { font-size: 3.5em; }
+	.link--kukuri { font-size: 2.5em; }
 
 }
 

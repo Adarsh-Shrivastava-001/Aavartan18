@@ -6,13 +6,14 @@
 }
 body {
   background: #1f1f1f;
+  height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 .cont {
   position: relative;
-  overflow: hidden;
-  height: 100vh;
-  padding: 80px 70px;
+  overflow: visible;
+  height: 80vh;
+  padding: 20px 70px 80px;
 }
 .cont__inner {
   position: relative;
