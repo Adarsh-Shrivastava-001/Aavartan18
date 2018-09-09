@@ -1,6 +1,13 @@
 #eventcontainer{
   /* height: 90vh; */
+  padding-top:  10vh;
 }
 .wrapper{
   height: 100vh;
+}
+#emenu{
+  z-index:3;
+  position: fixed;
+  /* top:0px; */
+  width:100%;
 }

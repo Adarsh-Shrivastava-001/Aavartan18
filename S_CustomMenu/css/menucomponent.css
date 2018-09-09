@@ -21,7 +21,7 @@ html, body, .perspective {
 }
 
 .container {
-	background: #000;
+	background: none;
 	min-height: 100%;
 	position: relative;
 	outline: 1px solid rgba(0,0,0,0);
@@ -531,7 +531,7 @@ html, body, .perspective {
 
 /* Effect Lay Down */
 .effect-laydown {
-	background: #b8b6b4;
+	/* background: #b8b6b4; */
 }
 
 .effect-laydown .container {
