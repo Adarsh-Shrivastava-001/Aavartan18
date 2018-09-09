@@ -24,6 +24,7 @@ body {
 a {
 	text-decoration: none;
 	color: #ed8151;
+	color: black;
 	outline: none;
 }
 
@@ -204,7 +205,7 @@ button:active {
 		width: 100%;
 		min-width: auto;
 		min-height: 0;
-		padding: 2em; 
+		padding: 2em;
 		text-align: center;
 	}
 

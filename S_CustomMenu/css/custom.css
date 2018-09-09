@@ -3,7 +3,7 @@
   padding-top:  10vh;
 }
 .wrapper{
-  height: 100vh;
+  height: auto;
 }
 #emenu{
   z-index:3;

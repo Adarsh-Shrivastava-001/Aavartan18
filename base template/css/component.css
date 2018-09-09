@@ -20,7 +20,7 @@ html, body, .perspective {
 }
 
 .container {
-	background: #fff;
+	background: #000;
 	min-height: 100%;
 	position: relative;
 	outline: 1px solid rgba(0,0,0,0);
@@ -127,7 +127,7 @@ html, body, .perspective {
 	white-space: nowrap;
 	font-weight: 300;
 	margin: 0 0 30px 0;
-	color: #fff;
+	color: #000;
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 	-webkit-transform-style: preserve-3d;
@@ -136,6 +136,7 @@ html, body, .perspective {
 
 .outer-nav a:hover {
 	color: #ffdccd;
+	color: grey;
 }
 
 .outer-nav.vertical a {
@@ -531,6 +532,7 @@ html, body, .perspective {
 /* Effect Lay Down */
 .effect-laydown {
 	background: #b8b6b4;
+	background: white;
 }
 
 .effect-laydown .container {
@@ -600,7 +602,7 @@ html, body, .perspective {
 
 /* Media Queries */
 @media screen and (max-width: 77em) {
-	
+
 	.outer-nav.top {
 		top: 15%;
 	}
@@ -619,7 +621,7 @@ html, body, .perspective {
 	.outer-nav.bottom {
 		bottom: 5%;
 	}
-	
+
 	.outer-nav.horizontal {
 		font-size: 1.7em;
 		width: 6.2em;
