@@ -9,14 +9,16 @@
 		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
 		<meta name="author" content="Codrops" />
 		<link rel="shortcut icon" href="../favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/eventlightbox.css"/>
-		<link rel="stylesheet" type="text/css" href="css/eventcheckbox.css"/>
-		<link rel="stylesheet" type="text/css" href="css/eventstyle.css" />
-		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<!-- menu css below -->
 		<link rel="stylesheet" type="text/css" href="css/menunormalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/menudemo.css" />
 		<link rel="stylesheet" type="text/css" href="css/menucomponent.css" />
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<link rel="stylesheet" type="text/css" href="css/eventlightbox.css"/>
+		<link rel="stylesheet" type="text/css" href="css/eventcheckbox.css"/>
+		<link rel="stylesheet" type="text/css" href="css/eventstyle.css" />
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load -->
 		<script src="js/menumodernizr.custom.25376.js"></script>
 	</head>
@@ -24,14 +26,14 @@
 		<div id="perspective" class="perspective effect-laydown">
 			<div class="container">
 				<div class="wrapper"><!-- wrapper needed for scroll -->
-				<div style="margin-bottom:1vw;position:sticky;top:0px;width:100%;">
+				<div style="margin-bottom:1vw;z-index:3;position:sticky;top:0px;width:100%;">
 					 <button id="showMenu" style="display: inline-block;float:right;">Menu</button>
 					 <img src="images/Aavartan.png" height="70vw" width="auto" style="display: inline-block;">
 				 </div>
 				 <div>
 					 	<!-- content begins -->
 
-						<div class="container">
+						<div id="eventcontainer" class="container">
 							<h3 class="pb-titlehead">Events</h3>
 
 

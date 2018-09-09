@@ -15,6 +15,7 @@
 body {
 	background: #ddd;
 	color: #5a5350;
+	
 	font-weight: 300;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
 	overflow-y: scroll;
@@ -204,7 +205,7 @@ button:active {
 		width: 100%;
 		min-width: auto;
 		min-height: 0;
-		padding: 2em; 
+		padding: 2em;
 		text-align: center;
 	}
 

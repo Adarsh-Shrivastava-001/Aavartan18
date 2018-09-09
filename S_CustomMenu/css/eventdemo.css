@@ -130,7 +130,14 @@ body #codrops-ad-wrapper{
 		line-height: 26px;
 	}
 }
-
+body{
+	overflow: auto;
+}
+.container > header{
+	text-align: center;
+	width: auto;
+	float: none;
+}
 @media screen and (max-width: 650px) {
 	body{
 		overflow: auto;
